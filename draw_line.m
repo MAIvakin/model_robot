@@ -1,7 +1,7 @@
 function [l1,l2] = draw_line(Object,x,y,psi)
     %base1 = [x y; x y+0.5];
-    base1 = [x+0.5-x y-y];
-    base2 = [0 -0.5];
+    base1 = [x+0.4-x y-y];
+    base2 = [0 -0.4];
     angle = psi;
     DCM = [cosd(angle) sind(angle); -sind(angle) cosd(angle)];
     base1 = base1*DCM;
